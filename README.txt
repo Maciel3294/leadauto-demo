@@ -1,26 +1,30 @@
-LEADAUTO — VERSÃO FIEL AO LAYOUT DA REFERÊNCIA
--------------------------------------------------
-Esta é uma reconstrução em HTML/CSS/JS inspirada na imagem enviada pelo cliente.
+LEADAUTO — DEMO FINAL
+=====================
 
-FUNCIONALIDADES DO DEMO
-- Navegação por seções
-- Menu responsivo
-- Seleção de pacote
-- Checkout demonstrativo
-- Pix ou cartão (simulados)
-- Simulação de pagamento aprovado
-- Liberação da etapa de download
-- Download de CSV demonstrativo
-- FAQ expansível
+Esta é uma versão demonstrativa da landing page LeadAuto.
 
-IMPORTANTE
-O pagamento e a entrega de leads são simulados nesta versão.
-Para produção, será necessário backend, banco de dados, autenticação, gateway de pagamento e webhook.
+Conteúdo:
+- index.html
+- style.css
+- script.js
+- assets/hero-leadauto.jpg
+- assets/leads-demo.csv
 
-COMO PUBLICAR NO GITHUB PAGES
-1. Extraia o ZIP.
-2. Substitua os arquivos do repositório pelo conteúdo desta pasta.
-3. Mantenha index.html na raiz.
-4. O GitHub Pages atualizará a página após o commit.
+Fluxo demonstrativo:
+Landing page -> escolha do pacote -> checkout -> escolha Pix/Cartão -> pagamento simulado -> acesso liberado -> download CSV.
 
-DESENVOLVIDO POR LIMA SALES
+IMPORTANTE:
+O pagamento desta versão é apenas uma simulação para apresentação comercial.
+Para produção, a arquitetura deve ser ligada a um backend, banco de dados, autenticação, gateway de pagamento e webhook para confirmação real.
+
+Como publicar no GitHub Pages:
+1. Abra o repositório leadauto-demo.
+2. Apague os arquivos antigos.
+3. Envie TODOS os arquivos desta pasta mantendo a estrutura.
+4. Em Settings > Pages, use GitHub Actions / deploy do site estático conforme a configuração atual do repositório.
+5. Aguarde a publicação.
+
+Contato demonstrativo:
+WhatsApp: (11) 94561-2087
+
+Desenvolvido por Lima Sales

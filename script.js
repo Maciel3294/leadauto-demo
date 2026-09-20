@@ -1,33 +1,62 @@
-const modal=document.getElementById('modal'), closeBtn=document.getElementById('close'), pkg=document.getElementById('pkg'), price=document.getElementById('price'), payval=document.getElementById('payval'), spkg=document.getElementById('spkg'), order=document.getElementById('order');
-let selectedPackage='10 Leads', selectedPrice=120;
-document.querySelectorAll('[data-buy]').forEach(btn=>btn.addEventListener('click',()=>{
-  selectedPackage=btn.dataset.package||'10 Leads';
-  selectedPrice=Number(btn.dataset.price||120);
-  pkg.textContent=selectedPackage; price.textContent=`R$ ${selectedPrice.toFixed(2).replace('.',',')}`;
-  modal.classList.add('show');
-  document.getElementById('formbox').classList.remove('hidden');
-  document.getElementById('paybox').classList.add('hidden');
-  document.getElementById('success').classList.add('hidden');
-}));
-closeBtn.addEventListener('click',()=>modal.classList.remove('show'));
-modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});
-document.getElementById('form').addEventListener('submit',e=>{
+const $ = (s, p=document) => p.querySelector(s);
+const $$ = (s, p=document) => [...p.querySelectorAll(s)];
+
+let selected = { package: "10 Leads", price: 120 };
+
+const checkoutModal = $("#checkoutModal");
+const paymentModal = $("#paymentModal");
+const accessModal = $("#accessModal");
+
+function openModal(el){ el.classList.add("open"); el.setAttribute("aria-hidden","false"); }
+function closeModal(el){ el.classList.remove("open"); el.setAttribute("aria-hidden","true"); }
+
+function money(v){ return Number(v).toLocaleString("pt-BR",{style:"currency",currency:"BRL"}); }
+
+$$(".btn-package").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    selected = { package: btn.dataset.package, price: Number(btn.dataset.price) };
+    $("#selectedPackage").textContent = selected.package;
+    $("#selectedPrice").textContent = money(selected.price);
+    openModal(checkoutModal);
+  });
+});
+
+$$(".modal-close").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    closeModal(btn.closest(".modal"));
+  });
+});
+
+$$(".modal").forEach(modal=>{
+  modal.addEventListener("click", e=>{
+    if(e.target === modal) closeModal(modal);
+  });
+});
+
+$("#checkoutForm").addEventListener("submit", e=>{
   e.preventDefault();
-  payval.textContent=`R$ ${selectedPrice.toFixed(2).replace('.',',')}`;
-  document.getElementById('method').textContent=document.querySelector('input[name="method"]:checked').value;
-  document.getElementById('formbox').classList.add('hidden');
-  document.getElementById('paybox').classList.remove('hidden');
+  const method = $('input[name="payment"]:checked').value;
+  $("#payAmount").textContent = money(selected.price);
+  $("#payMethod").textContent = method;
+  closeModal(checkoutModal);
+  openModal(paymentModal);
 });
-document.getElementById('approve').addEventListener('click',()=>{
-  order.textContent='#LA-'+Math.floor(100000+Math.random()*900000);
-  spkg.textContent=selectedPackage;
-  document.getElementById('paybox').classList.add('hidden');
-  document.getElementById('success').classList.remove('hidden');
+
+$("#approvePayment").addEventListener("click", ()=>{
+  $("#orderPackage").textContent = `Pacote • ${selected.package}`;
+  $("#orderNumber").textContent = "#LA-" + Math.floor(100000 + Math.random()*900000);
+  closeModal(paymentModal);
+  openModal(accessModal);
 });
-document.getElementById('download').addEventListener('click',()=>{
-  const csv='Nome,WhatsApp,Região,Interesse\nCliente Demonstrativo,(11) 99999-0000,São Paulo - SP,Seguro Auto';
-  const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
-  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='leads-leadauto-demo.csv'; a.click(); URL.revokeObjectURL(a.href);
+
+$(".menu-toggle").addEventListener("click", ()=>{
+  $(".nav-links").classList.toggle("open");
 });
-document.querySelector('.menu-toggle').addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'));
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));
+
+$$(".nav-links a").forEach(a=>{
+  a.addEventListener("click", ()=> $(".nav-links").classList.remove("open"));
+});
+
+document.addEventListener("keydown", e=>{
+  if(e.key === "Escape") $$(".modal.open").forEach(closeModal);
+});

@@ -1,211 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LeadAuto — leads qualificados para seguro auto.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LeadAuto — leads qualificados para venda de seguros auto.">
   <title>LeadAuto | Leads qualificados para vender mais seguros</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap nav">
-    <a class="brand" href="#inicio" aria-label="LeadAuto início">
-      <span class="brand-shield">⌁</span>
-      <span><strong>Lead<span>Auto</span></strong><small>LEADS PARA SEGURO AUTO</small></span>
-    </a>
-    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-    <nav class="nav-links">
-      <a class="active" href="#inicio">Início</a>
-      <a href="#como">Como funciona</a>
-      <a href="#pacotes">Pacotes de Leads</a>
-      <a href="#beneficios">Benefícios</a>
-      <a href="#faq">FAQ</a>
-      <button class="nav-cta" data-buy>Comprar Leads</button>
-    </nav>
-  </div>
-</header>
+  <header class="header" id="inicio">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="LeadAuto">
+        <span class="brand-mark">↗</span>
+        <span>
+          <strong>Lead<span>Auto</span></strong>
+          <small>LEADS PARA SEGURO AUTO</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav-links">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#pacotes">Pacotes de Leads</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#pacotes">Comprar Leads</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-<section class="hero" id="inicio">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow pill">LEADS QUALIFICADOS</span>
-      <h1>Leads qualificados<br>para <span>vender mais<br>seguros</span></h1>
-      <p>Encontre clientes interessados em seguro auto e acelere suas vendas com leads segmentados e prontos para contato.</p>
-      <div class="hero-actions">
-        <button class="btn primary" data-buy>Ver pacotes de leads <b>›</b></button>
-        <a class="btn outline" href="#como"><span class="play">▶</span> Como funciona</a>
+  <main>
+    <section class="hero">
+      <div class="hero-photo"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow">LEADS QUALIFICADOS</div>
+          <h1>Leads qualificados<br>para <span>vender mais</span><br>seguros</h1>
+          <p>Encontre clientes interessados em seguro auto e acelere suas vendas com leads segmentados e prontos para contato.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#pacotes">🛒 &nbsp;Ver pacotes de leads <b>›</b></a>
+            <a class="btn btn-outline" href="#como-funciona">▷ &nbsp;Como funciona</a>
+          </div>
+        </div>
+
+        <div class="hero-cards" aria-label="Exemplo de lead qualificado">
+          <div class="float-card card-profile">
+            <div class="card-icon">●</div>
+            <div><b>Perfil do cliente</b><small>• 28 a 55 anos<br>• Proprietário de veículo<br>• Interesse em seguro auto</small></div>
+          </div>
+          <div class="float-card card-region">
+            <div class="card-icon pin">●</div>
+            <div><b>Região</b><small>São Paulo - SP</small></div>
+          </div>
+          <div class="float-card card-leads">
+            <div><b>Leads qualificados</b><strong>1.248</strong></div>
+            <span class="bars">▂▅▇</span>
+          </div>
+          <div class="float-card card-interest">
+            <div class="shield">✓</div>
+            <div><b>Interesse<br>Seguro Auto</b><span>Alta intenção</span></div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="hero-visual" aria-label="Ilustração de clientes e corretor de seguros">
-      <div class="hero-glow"></div>
-      <div class="office"></div>
-      <div class="window"></div>
-      <div class="city-light l1"></div><div class="city-light l2"></div><div class="city-light l3"></div>
-      <div class="car-art">
-        <div class="car-roof"></div><div class="car-window w-a"></div><div class="car-window w-b"></div>
-        <div class="car-hood"></div><div class="car-grille"></div>
-        <div class="headlight"></div><div class="wheel left"></div><div class="wheel right"></div>
+    <section class="benefits" id="beneficios">
+      <div class="container benefit-grid">
+        <article><div class="benefit-icon">◎</div><div><h3>Leads segmentados</h3><p>Pessoas realmente interessadas em seguro auto, na sua região.</p></div></article>
+        <article><div class="benefit-icon">▤</div><div><h3>Dados organizados</h3><p>Informações completas e prontas para contato.</p></div></article>
+        <article><div class="benefit-icon">◇</div><div><h3>Compra rápida e segura</h3><p>Processo simples, sem burocracia e com total segurança.</p></div></article>
+        <article><div class="benefit-icon">ϟ</div><div><h3>Liberação automática</h3><p>Após a confirmação do pagamento, seus leads são liberados na hora.</p></div></article>
       </div>
-      <div class="person couple-woman"><i></i><b></b></div>
-      <div class="person couple-man"><i></i><b></b></div>
-      <div class="person broker"><i></i><b></b><em></em></div>
+    </section>
 
-      <div class="float-card profile"><span class="card-icon">●</span><div><small>Perfil do cliente</small><strong>• 28 a 55 anos<br>• Proprietário de veículo<br>• Interesse em seguro auto</strong></div></div>
-      <div class="float-card region"><span class="card-icon pin">●</span><div><small>Região</small><strong>São Paulo • SP</strong></div><span class="map-shape">⌁</span></div>
-      <div class="float-card intent"><span class="shield">✓</span><div><small>Interesse<br>Seguro Auto</small><strong>Alta intenção</strong></div></div>
-      <div class="lead-counter"><span class="bars">▂▅▇</span><div><small>Leads qualificados</small><strong>1.248</strong></div></div>
+    <section class="section packages" id="pacotes">
+      <div class="container">
+        <div class="section-heading">
+          <span>NOSSOS PACOTES</span>
+          <h2>Escolha o pacote ideal para o seu negócio</h2>
+          <p>Leads de seguro auto, segmentados por região e com dados organizados para você entrar em contato com clientes realmente interessados.</p>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <div class="package-top"><span>🚗</span><small>PACOTE</small></div>
+            <h3>5 LEADS</h3>
+            <ul><li>✓ Leads de Seguro Auto</li><li>✓ Segmentação por região</li><li>✓ Dados organizados</li></ul>
+            <div class="price"><small>A partir de</small><strong>R$ 75<span>,00</span></strong></div>
+            <p class="demo-label">Pacote demonstrativo</p>
+            <button class="btn btn-package" data-package="5 Leads" data-price="75">🛒 &nbsp;Comprar pacote</button>
+          </article>
+
+          <article class="package-card featured">
+            <div class="popular">MAIS POPULAR</div>
+            <div class="package-top"><span>🚗</span><small>PACOTE</small></div>
+            <h3>10 LEADS</h3>
+            <ul><li>✓ Leads de Seguro Auto</li><li>✓ Segmentação por região</li><li>✓ Dados organizados</li></ul>
+            <div class="price"><small>A partir de</small><strong>R$ 120<span>,00</span></strong></div>
+            <p class="demo-label">Pacote demonstrativo</p>
+            <button class="btn btn-package" data-package="10 Leads" data-price="120">🛒 &nbsp;Comprar pacote</button>
+          </article>
+
+          <article class="package-card">
+            <div class="package-top"><span>🚗</span><small>PACOTE</small></div>
+            <h3>15 LEADS</h3>
+            <ul><li>✓ Leads de Seguro Auto</li><li>✓ Segmentação por região</li><li>✓ Dados organizados</li></ul>
+            <div class="price"><small>A partir de</small><strong>R$ 140<span>,00</span></strong></div>
+            <p class="demo-label">Pacote demonstrativo</p>
+            <button class="btn btn-package" data-package="15 Leads" data-price="140">🛒 &nbsp;Comprar pacote</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="como-funciona">
+      <div class="container">
+        <div class="section-heading center">
+          <span>COMO FUNCIONA</span>
+          <h2>Em apenas alguns cliques,<br>seus leads estão disponíveis</h2>
+          <p>Todo o processo é simples, rápido e automatizado. Você escolhe o pacote, realiza o pagamento e, após a confirmação, faz o download dos seus leads.</p>
+        </div>
+        <div class="steps">
+          <article><b>01</b><div class="step-icon">🛒</div><h3>Escolha seu pacote</h3><p>Selecione a quantidade de leads ideal para o seu negócio.</p></article>
+          <article><b>02</b><div class="step-icon">▣</div><h3>Realize o pagamento</h3><p>Pague de forma segura e prática.</p></article>
+          <article><b>03</b><div class="step-icon">✓</div><h3>Pagamento confirmado</h3><p>Assim que o pagamento for confirmado, o sistema libera seus leads automaticamente.</p></article>
+          <article><b>04</b><div class="step-icon">↓</div><h3>Baixe seus leads</h3><p>Faça o download do arquivo com todos os contatos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="security">
+      <div class="container">
+        <div class="section-heading center light">
+          <span>SEGURANÇA EM TODAS AS ETAPAS</span>
+          <h2>Sua tranquilidade é a nossa prioridade</h2>
+          <p>Utilizamos tecnologias para garantir um processo seguro, rápido e confiável, tanto no pagamento quanto na entrega dos leads.</p>
+        </div>
+        <div class="security-grid">
+          <div>◇ <b>Pagamento seguro</b><small>Com criptografia</small></div>
+          <div>⚙ <b>Processamento automático</b><small>Sem burocracia</small></div>
+          <div>◇ <b>Download protegido</b><small>Arquivo seguro</small></div>
+          <div>♙ <b>Seus dados protegidos</b><small>Total sigilo</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container cta-box">
+        <div>
+          <span>PARA CORRETORES, AGENTES E EMPRESAS DE SEGUROS</span>
+          <h2>Mais oportunidades.<br><em>Mais vendas.</em></h2>
+          <p>Tenha acesso a leads qualificados de seguro auto e aumente as oportunidades da sua equipe comercial.</p>
+        </div>
+        <a class="btn btn-primary" href="#pacotes">Ver pacotes de leads ›</a>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="section-heading"><span>DÚVIDAS</span><h2>Perguntas<br>frequentes</h2></div>
+        <div class="faq-list">
+          <details><summary>O que é um lead qualificado? <b>+</b></summary><p>É um contato com informações relevantes para abordagem comercial e interesse em seguro auto.</p></details>
+          <details><summary>Como recebo os leads? <b>+</b></summary><p>Na versão real, após o pagamento confirmado, o cliente acessará uma área protegida e fará o download dos leads.</p></details>
+          <details><summary>Posso escolher Pix ou cartão? <b>+</b></summary><p>Sim. O protótipo demonstra as duas opções. A integração real pode ser conectada ao gateway escolhido.</p></details>
+          <details><summary>Os pagamentos deste demo são reais? <b>+</b></summary><p>Não. A aprovação é simulada para apresentação comercial. A integração real é feita após a aprovação do projeto.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-top">
+      <a class="brand" href="#inicio"><span class="brand-mark">↗</span><span><strong>Lead<span>Auto</span></strong><small>LEADS PARA SEGURO AUTO</small></span></a>
+      <div class="footer-links"><a href="#inicio">Início</a><a href="#como-funciona">Como funciona</a><a href="#pacotes">Pacotes de leads</a><a href="#beneficios">Benefícios</a><a href="#faq">FAQ</a></div>
     </div>
-  </div>
-</section>
-
-<section class="benefit-strip" id="beneficios">
-  <div class="wrap benefits">
-    <article><span class="round-icon">◎</span><div><h3>Leads segmentados</h3><p>Pessoas realmente interessadas em seguro auto, na sua região.</p></div></article>
-    <article><span class="round-icon">▤</span><div><h3>Dados organizados</h3><p>Informações completas e prontas para contato.</p></div></article>
-    <article><span class="round-icon">♢</span><div><h3>Compra rápida e segura</h3><p>Processo simples, sem burocracia e com total segurança.</p></div></article>
-    <article><span class="round-icon">ϟ</span><div><h3>Liberação automática</h3><p>Após a confirmação do pagamento, seus leads são liberados na hora.</p></div></article>
-  </div>
-</section>
-
-<section class="packages section" id="pacotes">
-  <div class="wrap">
-    <div class="section-intro">
-      <span class="section-kicker">NOSSOS PACOTES</span>
-      <h2>Escolha o pacote ideal para o seu negócio</h2>
-      <p>Leads de seguro auto, segmentados por região e com dados organizados para você entrar em contato com clientes realmente interessados.</p>
+    <div class="container footer-bottom">
+      <span>© 2026 LeadAuto. Todos os direitos reservados.</span>
+      <a href="https://wa.me/5511945612087" target="_blank" rel="noopener">WhatsApp: (11) 94561-2087</a>
+      <span>Desenvolvido por Lima Sales</span>
     </div>
-    <div class="package-grid">
-      <article class="package">
-        <div class="pkg-top"><span class="pkg-icon">🚗</span><div><small>PACOTE</small><h3>5 LEADS</h3></div></div>
-        <ul><li>✓ Leads de Seguro Auto</li><li>✓ Segmentação por região</li><li>✓ Dados organizados</li></ul>
-        <div class="price-box"><small>A partir de</small><strong>R$ 75<sup>,00</sup></strong><span>Pacote demonstrativo</span></div>
-        <button class="btn primary full" data-buy data-package="5 Leads" data-price="75">🛒 &nbsp; Comprar pacote</button>
-      </article>
+  </footer>
 
-      <article class="package featured">
-        <span class="popular">MAIS POPULAR</span>
-        <div class="pkg-top"><span class="pkg-icon">🚗</span><div><small>PACOTE</small><h3>10 LEADS</h3></div></div>
-        <ul><li>✓ Leads de Seguro Auto</li><li>✓ Segmentação por região</li><li>✓ Dados organizados</li></ul>
-        <div class="price-box"><small>A partir de</small><strong>R$ 120<sup>,00</sup></strong><span>Pacote demonstrativo</span></div>
-        <button class="btn primary full" data-buy data-package="10 Leads" data-price="120">🛒 &nbsp; Comprar pacote</button>
-      </article>
-
-      <article class="package">
-        <div class="pkg-top"><span class="pkg-icon">🚗</span><div><small>PACOTE</small><h3>15 LEADS</h3></div></div>
-        <ul><li>✓ Leads de Seguro Auto</li><li>✓ Segmentação por região</li><li>✓ Dados organizados</li></ul>
-        <div class="price-box"><small>A partir de</small><strong>R$ 140<sup>,00</sup></strong><span>Pacote demonstrativo</span></div>
-        <button class="btn primary full" data-buy data-package="15 Leads" data-price="140">🛒 &nbsp; Comprar pacote</button>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="how section" id="como">
-  <div class="wrap how-grid">
-    <div class="how-copy">
-      <span class="section-kicker">COMO FUNCIONA</span>
-      <h2>Em apenas alguns cliques,<br><span>seus leads estão disponíveis</span></h2>
-      <p>Todo o processo é simples, rápido e automatizado. Você escolhe o pacote, realiza o pagamento e, após a confirmação, faz o download dos seus leads.</p>
-    </div>
-    <div class="steps">
-      <article><span>01</span><b>🛒</b><h3>Escolha seu pacote</h3><p>Selecione a quantidade de leads ideal para o seu negócio.</p></article>
-      <i>→</i>
-      <article><span>02</span><b>▣</b><h3>Realize o pagamento</h3><p>Pague de forma segura e prática.</p></article>
-      <i>→</i>
-      <article><span>03</span><b>✓</b><h3>Pagamento confirmado</h3><p>Assim que o pagamento for confirmado, o sistema libera seus leads automaticamente.</p></article>
-      <i>→</i>
-      <article><span>04</span><b>↓</b><h3>Baixe seus leads</h3><p>Faça o download do arquivo com todos os contatos.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="security">
-  <div class="wrap security-inner">
-    <div>
-      <span class="section-kicker">SEGURANÇA EM TODAS AS ETAPAS</span>
-      <h2>Sua tranquilidade é a nossa prioridade</h2>
-      <p>Utilizamos as melhores tecnologias para garantir um processo seguro, rápido e confiável, tanto no pagamento quanto na entrega dos leads.</p>
-    </div>
-    <div class="security-list">
-      <div><b>♢</b><span><strong>Pagamento seguro</strong><small>(com criptografia)</small></span></div>
-      <div><b>⚙</b><span><strong>Processamento automático</strong><small>(sem burocracia)</small></span></div>
-      <div><b>♢</b><span><strong>Download protegido</strong><small>(arquivo seguro)</small></span></div>
-      <div><b>♢</b><span><strong>Seus dados protegidos</strong><small>(e total sigilo)</small></span></div>
-    </div>
-    <div class="security-shield">♙</div>
-  </div>
-</section>
-
-<section class="final-cta">
-  <div class="wrap final-grid">
-    <div class="dashboard-art"><div class="screen"><div class="screen-top"></div><div class="screen-row"></div><div class="screen-row"></div><div class="screen-row"></div><div class="screen-row"></div></div></div>
-    <div class="final-copy">
-      <span class="section-kicker">PARA CORRETORES, AGENTES E EMPRESAS DE SEGUROS</span>
-      <h2>Mais oportunidades.<br><span>Mais vendas.</span></h2>
-      <p>Seja um parceiro LeadAuto e tenha acesso a leads qualificados de seguro auto, com todo o suporte que você precisa.</p>
-      <button class="btn primary" data-buy>Ver pacotes de leads <b>›</b></button>
-    </div>
-    <div class="productivity"><p>◉ &nbsp; Aumente sua produtividade</p><p>♙ &nbsp; Conquiste novos clientes</p><p>▣ &nbsp; Expanda sua carteira</p><p>◉ &nbsp; Tenha mais resultados</p></div>
-  </div>
-</section>
-
-<section class="faq section" id="faq">
-  <div class="wrap faq-grid">
-    <div><span class="section-kicker">DÚVIDAS</span><h2>Perguntas<br><span>frequentes</span></h2></div>
-    <div class="faq-list">
-      <details open><summary>O que é um lead qualificado? <b>+</b></summary><p>É um contato com informações relevantes para abordagem comercial e interesse em seguro auto.</p></details>
-      <details><summary>Como recebo os leads? <b>+</b></summary><p>Na versão real, após o pagamento confirmado, o cliente acessará uma área protegida e fará o download dos leads.</p></details>
-      <details><summary>Posso escolher Pix ou cartão? <b>+</b></summary><p>Sim. O protótipo oferece as duas opções para demonstração.</p></details>
-      <details><summary>Os pagamentos deste demo são reais? <b>+</b></summary><p>Não. A aprovação é simulada para apresentação comercial. A integração real pode ser feita depois da aprovação do projeto.</p></details>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer>
-  <div class="wrap footer-main">
-    <a class="brand" href="#inicio"><span class="brand-shield">⌁</span><span><strong>Lead<span>Auto</span></strong><small>LEADS PARA SEGURO AUTO</small></span></a>
-    <nav><a href="#inicio">Início</a><a href="#como">Como funciona</a><a href="#pacotes">Pacotes de leads</a><a href="#beneficios">Benefícios</a><a href="#faq">FAQ</a></nav>
-    <div class="contact"><span>✉ contato@leadauto.com.br</span><span>◔ (11) 98765-4321</span></div>
-  </div>
-  <div class="wrap footer-bottom"><span>© 2026 LeadAuto. Todos os direitos reservados.</span><span>Desenvolvido por <b>Lima Sales</b></span></div>
-</footer>
-
-<div class="modal-bg" id="modal">
-  <div class="modal">
-    <button class="close" id="close">×</button>
-    <div id="formbox">
-      <span class="section-kicker">CHECKOUT DEMONSTRATIVO</span>
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Fechar">×</button>
+      <div class="modal-kicker">CHECKOUT DEMONSTRATIVO</div>
       <h2>Seu próximo passo começa aqui.</h2>
-      <div class="selected"><span>Pacote: <b id="pkg">10 Leads</b></span><strong id="price">R$ 120,00</strong></div>
-      <form id="form">
-        <input id="name" required placeholder="Nome completo">
-        <input id="email" required type="email" placeholder="E-mail">
-        <input id="phone" required placeholder="WhatsApp">
-        <div class="pay"><label><input type="radio" name="method" value="Pix" checked> Pix</label><label><input type="radio" name="method" value="Cartão"> Cartão</label></div>
-        <button class="btn primary full" type="submit">Continuar para pagamento →</button>
+      <div class="selected-package"><span id="selectedPackage">10 Leads</span><strong id="selectedPrice">R$ 120,00</strong></div>
+      <form id="checkoutForm">
+        <label>Nome completo<input required name="name" placeholder="Seu nome"></label>
+        <label>E-mail<input required type="email" name="email" placeholder="voce@email.com"></label>
+        <label>WhatsApp<input required name="whatsapp" placeholder="(11) 99999-9999"></label>
+        <div class="payment-options">
+          <label><input type="radio" name="payment" value="Pix" checked> <span>Pix</span></label>
+          <label><input type="radio" name="payment" value="Cartão"> <span>Cartão</span></label>
+        </div>
+        <button class="btn btn-primary full" type="submit">Continuar para pagamento →</button>
       </form>
-      <small class="note">🔒 Demonstração comercial — pagamento real será integrado após aprovação.</small>
-    </div>
-    <div id="paybox" class="hidden">
-      <div class="success-icon">✓</div><span class="section-kicker">PAGAMENTO</span><h2>Pagamento demonstrativo</h2>
-      <div class="fake-payment"><strong id="payval">R$ 120,00</strong><span id="method">Pix</span><b>▦</b></div>
-      <button class="btn primary full" id="approve">Simular pagamento aprovado ✓</button>
-    </div>
-    <div id="success" class="hidden">
-      <div class="success-icon">✓</div><span class="section-kicker">PAGAMENTO APROVADO</span><h2>Acesso liberado.</h2>
-      <div class="selected"><span>Pedido<br><b id="order">#LA-000000</b></span><span>Pacote<br><b id="spkg">10 Leads</b></span></div>
-      <button class="btn primary full" id="download">Baixar meus leads ↓</button>
-      <small class="note">Arquivo demonstrativo. Na versão real, os leads serão liberados após confirmação do gateway.</small>
+      <small class="notice">🔒 Demonstração comercial — pagamento real será integrado após aprovação.</small>
     </div>
   </div>
-</div>
-<script src="script.js"></script>
+
+  <div class="modal" id="paymentModal" aria-hidden="true">
+    <div class="modal-card payment-card">
+      <button class="modal-close" aria-label="Fechar">×</button>
+      <div class="success-mark">✓</div>
+      <div class="modal-kicker">PAGAMENTO</div>
+      <h2>Pagamento demonstrativo</h2>
+      <div class="payment-summary"><strong id="payAmount">R$ 120,00</strong><span id="payMethod">Pix</span><span>▦</span></div>
+      <p>Este botão simula a aprovação do pagamento para apresentar o fluxo ao cliente.</p>
+      <button class="btn btn-primary full" id="approvePayment">Simular pagamento aprovado ✓</button>
+    </div>
+  </div>
+
+  <div class="modal" id="accessModal" aria-hidden="true">
+    <div class="modal-card access-card">
+      <button class="modal-close" aria-label="Fechar">×</button>
+      <div class="success-mark">✓</div>
+      <div class="modal-kicker">PAGAMENTO APROVADO</div>
+      <h2>Acesso liberado.</h2>
+      <div class="order"><span>Pedido</span><strong id="orderNumber">#LA-2026</strong><span id="orderPackage">Pacote • 10 Leads</span></div>
+      <a class="btn btn-primary full" href="assets/leads-demo.csv" download>Baixar meus leads ↓</a>
+      <small class="notice">Arquivo demonstrativo. Na versão real, os leads serão liberados após confirmação do gateway.</small>
+      <a class="support" href="https://wa.me/5511945612087" target="_blank" rel="noopener">Falar com suporte no WhatsApp</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
