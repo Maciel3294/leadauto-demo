@@ -1,20 +1,26 @@
-LEADAUTO — DEMO COMERCIAL
+LEADAUTO — VERSÃO FIEL AO LAYOUT DA REFERÊNCIA
+-------------------------------------------------
+Esta é uma reconstrução em HTML/CSS/JS inspirada na imagem enviada pelo cliente.
 
-Esta versão é uma demonstração funcional para apresentação.
-Inclui landing page, pacotes, checkout demonstrativo, escolha Pix/cartão,
-simulação de aprovação, área de leads e download de CSV demonstrativo.
+FUNCIONALIDADES DO DEMO
+- Navegação por seções
+- Menu responsivo
+- Seleção de pacote
+- Checkout demonstrativo
+- Pix ou cartão (simulados)
+- Simulação de pagamento aprovado
+- Liberação da etapa de download
+- Download de CSV demonstrativo
+- FAQ expansível
 
-IMPORTANTE: nenhum pagamento real é processado. Não há backend, banco de
-dados ou credenciais de gateway. A integração real com Mercado Pago,
-webhooks, autenticação, banco e proteção dos arquivos deve ocorrer somente
-após a aprovação do projeto.
+IMPORTANTE
+O pagamento e a entrega de leads são simulados nesta versão.
+Para produção, será necessário backend, banco de dados, autenticação, gateway de pagamento e webhook.
 
-PUBLICAÇÃO NO GITHUB PAGES:
-1. Crie um repositório no GitHub.
-2. Envie index.html, style.css e script.js para a raiz.
-3. Vá em Settings > Pages.
-4. Em Build and deployment, escolha Deploy from a branch.
-5. Selecione a branch main e a pasta / (root).
-6. Salve. O GitHub exibirá o link público.
+COMO PUBLICAR NO GITHUB PAGES
+1. Extraia o ZIP.
+2. Substitua os arquivos do repositório pelo conteúdo desta pasta.
+3. Mantenha index.html na raiz.
+4. O GitHub Pages atualizará a página após o commit.
 
-WhatsApp de atendimento da demo: (11) 94561-2087
+DESENVOLVIDO POR LIMA SALES
